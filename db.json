@@ -6,7 +6,7 @@
       "category": "Women’s Footwear",
       "price": "99.00",
       "oldPrice": null,
-      "quantity": 1,
+      "quantity": 5,
       "cover": "https://picsum.photos"
     },
     {
@@ -15,7 +15,7 @@
       "category": "Women’s Footwear",
       "price": "42.00",
       "oldPrice": null,
-      "quantity": 7,
+      "quantity": 4,
       "cover": "https://picsum.photos"
     },
     {
@@ -24,7 +24,7 @@
       "category": "Men’s Footwear",
       "price": "34.00",
       "oldPrice": null,
-      "quantity": 3,
+      "quantity": 12,
       "cover": "https://picsum.photos"
     },
     {
@@ -33,7 +33,7 @@
       "category": "Men’s Footwear",
       "price": "19.00",
       "oldPrice": null,
-      "quantity": 10,
+      "quantity": 6,
       "cover": "https://picsum.photos"
     },
     {
@@ -42,7 +42,7 @@
       "category": "Men’s Footwear",
       "price": "19.00",
       "oldPrice": null,
-      "quantity": 10,
+      "quantity": 0,
       "cover": "https://picsum.photos"
     },
     {
@@ -51,7 +51,7 @@
       "category": "Women’s Casualwear",
       "price": "167.00",
       "oldPrice": null,
-      "quantity": 10,
+      "quantity": 6,
       "cover": "https://picsum.photos"
     },
     {
@@ -60,7 +60,7 @@
       "category": "Women’s Casualwear",
       "price": "30.00",
       "oldPrice": null,
-      "quantity": 10,
+      "quantity": 5,
       "cover": "https://picsum.photos"
     },
     {
@@ -69,7 +69,7 @@
       "category": "Men’s Casualwear",
       "price": "49.00",
       "oldPrice": null,
-      "quantity": 10,
+      "quantity": 9,
       "cover": "https://picsum.photos"
     },
     {
@@ -78,7 +78,7 @@
       "category": "Men’s Casualwear",
       "price": "39.99",
       "oldPrice": "49.99",
-      "quantity": 10,
+      "quantity": 3,
       "cover": "https://picsum.photos"
     },
     {
@@ -87,7 +87,7 @@
       "category": "Men’s Formalwear",
       "price": "75.00",
       "oldPrice": null,
-      "quantity": 10,
+      "quantity": 2,
       "cover": "https://picsum.photos"
     },
     {
@@ -96,7 +96,7 @@
       "category": "Men’s Formalwear",
       "price": "175.50",
       "oldPrice": null,
-      "quantity": 10,
+      "quantity": 1,
       "cover": "https://picsum.photos"
     },
     {
@@ -114,7 +114,7 @@
       "category": "Women’s Formalwear",
       "price": "540.00",
       "oldPrice": null,
-      "quantity": 10,
+      "quantity": 5,
       "cover": "https://picsum.photos"
     }
   ],

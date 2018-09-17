@@ -36,7 +36,7 @@ export default class Basket extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-		this.setState({ visible: nextProps.visible });
+		return this.setState({ visible: nextProps.visible });
 	}
 
 	getProducts = () => {
@@ -57,10 +57,12 @@ export default class Basket extends React.Component {
 
 	handleOk = (e) => {
 		this.setState({ visible: false });
+		this.props.closeBasket();
 	};
 
 	handleCancel = (e) => {
 		this.setState({ visible: false });
+		this.props.closeBasket();
 	};
 
 	addOneInBasket = async (product) => {
@@ -138,15 +140,16 @@ export default class Basket extends React.Component {
 	render() {
 		return (
 			<Modal
+				onCancel={this.handleCancel}
+				onOk={this.handleOk}
+				visible={this.props.visible}
+				closable={true}
 				title={
 					<span>
 						My basket -{' '}
 						<span id="basketItemNumber">{this.state.basket.productsCount}</span>
 					</span>
 				}
-				visible={this.state.visible}
-				onOk={this.handleOk}
-				onCancel={this.handleCancel}
 				footer={[
 					<Input
 						key="voucher"
@@ -178,7 +181,6 @@ export default class Basket extends React.Component {
 						)}
 					</Button>,
 				]}
-				closable={false}
 			>
 				<React.Fragment>
 					<p style={{ fontWeight: 'bold', textAlign: 'center' }}>

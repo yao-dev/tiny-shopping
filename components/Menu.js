@@ -67,6 +67,12 @@ export default class Header extends React.Component {
 		});
 	};
 
+	closeBasket = () => {
+		this.setState({
+			basketVisible: false,
+		});
+	};
+
 	render() {
 		return (
 			<React.Fragment>
@@ -143,7 +149,10 @@ export default class Header extends React.Component {
 						) : null}
 					</Menu.Item>
 				</Menu>
-				<Basket visible={this.state.basketVisible} />
+				<Basket
+					visible={this.state.basketVisible}
+					closeBasket={this.closeBasket}
+				/>
 				<style>{`
           #basketItemNumber {
             color: #FFF;

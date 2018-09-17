@@ -1,6 +1,7 @@
 /** @format */
 
 import jsonp from 'jsonp';
+import compact from 'lodash/compact';
 
 import ProductItem from './ProductItem';
 import {
@@ -52,20 +53,19 @@ export default class ProductList extends React.Component {
 				}
 
 				return (
-					<div className="column">
-						<ProductItem
-							key={item.id}
-							id={item.id}
-							name={item.name}
-							category={item.category}
-							price={item.price}
-							oldPrice={item.oldPrice}
-							quantity={item.quantity}
-							cover={item.cover}
-						/>
-					</div>
+					<ProductItem
+						key={item.id}
+						id={item.id}
+						name={item.name}
+						category={item.category}
+						price={item.price}
+						oldPrice={item.oldPrice}
+						quantity={item.quantity}
+						cover={item.cover}
+					/>
 				);
-			}); //.filter(item => !!item);
+			});
+			productList = compact(productList);
 		}
 
 		const totalProduct = productList ? productList.length : 0;
@@ -73,9 +73,7 @@ export default class ProductList extends React.Component {
 		return (
 			<div id="productView">
 				<p id="totalProduct">{totalProduct} products found</p>
-				<div id="productListContainer" className="columns is-mobile">
-					{productList}
-				</div>
+				<div id="productListContainer">{productList}</div>
 				<style jsx>{`
 					#productView {
 						width: 100%;
