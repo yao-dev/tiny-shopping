@@ -6,7 +6,7 @@ A tiny e-commerce of clothing retailer
 ```
 git clone git@github.com:yao-dev/next-app-generator.git tiny-shopping
 cd tiny-shopping
-yarn
+yarn && yarn dev
 ```
 Now go to http://localhost:3000
 
