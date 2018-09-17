@@ -129,8 +129,8 @@ export default class Basket extends React.Component {
 	buyNow = async () => {
 		try {
 			await axios.post('http://localhost:3001/buy');
-			this.setState({ visible: false });
 			message.success('Thank you for your purchase');
+			this.handleOk();
 			EMITTER.emit(UPDATE_BASKET_PRODUCTS);
 		} catch (e) {
 			message.error('Unable to proceed to payment');
