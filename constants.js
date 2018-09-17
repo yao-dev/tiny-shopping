@@ -1,3 +1,5 @@
+/** @format */
+
 import EventEmitter from 'wolfy87-eventemitter';
 
 export const EMITTER = new EventEmitter();

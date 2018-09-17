@@ -1,7 +1,9 @@
-import low from 'lowdb'
-import FileSync from 'lowdb/adapters/FileSync'
+/** @format */
 
-const adapter = new FileSync('db.json')
-const instance = low(adapter)
+import low from 'lowdb';
+import FileSync from 'lowdb/adapters/FileSync';
 
-export default instance
+const adapter = new FileSync('db.json');
+const instance = low(adapter);
+
+export default instance;

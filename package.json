@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "concurrently \"nodemon ./server.js\" \"next dev\"",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier": "prettier --single-quote --trailing-comma es5 --insert-pragma --use-tabs --arrow-parens always --write \"{components,pages}/**/*.js\" \"./*.js\""
   },
   "dependencies": {
     "antd": "^3.9.2",
