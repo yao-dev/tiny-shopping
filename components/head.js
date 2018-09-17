@@ -7,7 +7,7 @@ const defaultOGImage = ''
 
 const Head = (props) => (
   <NextHead>
-    <meta charset="UTF-8" />
+    <meta charSet="UTF-8" />
     <title>{props.title || ''}</title>
     <meta name="description" content={props.description || defaultDescription} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,10 +24,12 @@ const Head = (props) => (
     <meta property="og:image" content={props.ogImage || defaultOGImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.9.2/antd.css" integrity="sha256-/MoSMTo3Ef4B1IsMUI2c4Gr4V2vqSkhJceYmKhUJse8=" crossorigin="anonymous" />
     <style jsx>{`
       :global(body) {
         margin: 0;
         font-family: -apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Helvetica,sans-serif;
+        color: black;
       }
     `}</style>
   </NextHead>

@@ -7,13 +7,26 @@
   "author": "Michael YAO <yao.developpeur@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "concurrently \"nodemon ./server.js\" \"next dev\"",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "antd": "^3.9.2",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "jsonp": "^0.2.1",
+    "lodash": "^4.17.11",
+    "lowdb": "^1.0.0",
     "next": "^6.1.2",
     "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "react-dom": "^16.5.0",
+    "wolfy87-eventemitter": "^5.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "prettier": "1.14.2"
   }
 }
