@@ -1,6 +1,10 @@
 # tiny-shopping
 A tiny e-commerce of clothing retailer
 
+## Settings
+
+To custom the database, go update db.json in the root of the project.
+
 ## Run app
 
 ```
