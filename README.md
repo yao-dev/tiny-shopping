@@ -8,7 +8,7 @@ To custom the database, go update db.json in the root of the project.
 ## Run app
 
 ```
-git clone git@github.com:yao-dev/next-app-generator.git tiny-shopping
+git clone git@github.com:yao-dev/tiny-shopping.git
 cd tiny-shopping
 yarn && yarn dev
 ```
